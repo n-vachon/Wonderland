@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="GameOn" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/GameOn" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/GameOn" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=c++11" />
+			<Add directory="../include/Map" />
+			<Add directory="../include/Characters" />
+			<Add directory="../include/Puzzles" />
+			<Add directory="../obj" />
+			<Add directory="../Maps2" />
+			<Add directory="../src/Map" />
+			<Add directory="../Round2" />
+			<Add directory="include" />
+		</Compiler>
+		<Unit filename="SaveFunction.cpp" />
+		<Unit filename="SaveFunction.h" />
+		<Unit filename="include/Board.h" />
+		<Unit filename="include/Characters.h" />
+		<Unit filename="include/Helpers.h" />
+		<Unit filename="include/Items.h" />
+		<Unit filename="include/MapInterface.h" />
+		<Unit filename="include/Room.h" />
+		<Unit filename="include/WonderLand.h" />
+		<Unit filename="include/puzzles.h" />
+		<Unit filename="src/Characters.cpp" />
+		<Unit filename="src/Helpers.cpp" />
+		<Unit filename="src/Items.cpp" />
+		<Unit filename="src/MapInterface-IMP.cpp" />
+		<Unit filename="src/Room-IMP.cpp" />
+		<Unit filename="src/WonderLand-IMP.cpp" />
+		<Unit filename="src/WonderMain.cpp" />
+		<Unit filename="src/puzzles.cpp" />
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<lib_finder disable_auto="1" />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
